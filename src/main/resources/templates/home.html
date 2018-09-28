@@ -3,265 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>sdyin</title>
-	<!--<link href="../static/blog.css" type="text/css" rel="stylesheet">-->
-	<style type="text/css">
-		*{
-			margin: 0px;
-			padding: 0px;
-			font-family: 微软雅黑;
-		}
-		.hr{
-			width: 100%;
-			height: 2px;
-			margin: 0px auto;
-		}
-		h2{
-			font-size: 30px;
-		}
-		h3{
-			font-size: 20px;
-		}
-		nav{
-			background: transparent;
-			width: 100%;
-			height: 50px;
-			position: fixed;
-		}
-		#banner{
-			background: rgba(0,0,0,0.03);
-			height: 700px;
-		}
-		nav ul{
-			list-style: none;
-			margin: 0;
-		}
-		nav ul li{
-			display: inline-block;
-			line-height: 50px;
-			float: right;
-			margin-right: 20px;
-		}
-		nav ul li a{
-			text-decoration: none;
-			line-height: 50px;
-			display: inline-block;
-			height: inherit;
-			color: #f9f6f6;
-		}
-		.logo1{
-			float: left;
-			margin-left: 20px;
-			letter-spacing: 3px;
-		}
-		#banner .center1{
-			max-width: 290px;
-			margin: 0px auto;
-			text-align: center;
-			position: relative;
-			top: 200px;
-		}
-		#banner .center1 h1{
-			margin: 0;
-			margin-bottom: 20px;
-		}
-		button{
-			margin-top: 15px;
-			border: none;
-			background-color: #5b5a5a;
-			color: #faf8f8;
-			padding: 14px 60px;
-			cursor: pointer;/*鼠标触及变小手*/
-		}
-		#banner .center1 .more{
-			margin-top:180px;
-		}
-		#banner .center1 .more a{
-			text-decoration: none;
-			color: #9c2029;
-			font-size: 18px;
-		}
-		/*内容*/
-		.biaoti{
-			margin-bottom: 20px;
-		}
-		.content .green-area{
-			background: #089D80;
-			color: #fff;
-			text-align: center;
-			padding: 100px 0px;
-			height: 300px;
-		}
-		.green-area .hr{
-			background: #056470;
-			width: 50%;
-			margin-top: 22px;
-			margin-bottom: 22px;
-		}
-		.green-area .tubiao .item{
-			display: inline-block;
-			text-align: center;
-			height: 80px;
-			width: 80px;
-			background-color: #08866d;
-			transform: rotate(45deg);
-			margin: 25px;
-		}
-
-		.gray-area{
-			background: #4a4949;
-			width: 100%;
-			height: 900px;
-		}
-		.one{
-			background-color: #6e6c6c;
-			width: 100%;
-			height: 300px;
-		}
-
-		.one .img img{
-			width: 500px;
-			height: 300px;
-			float: left;
-		}
-		.one p{
-			float: left;
-			position: relative;
-			left: 50px;
-			top: 150px;
-		}
-		.one h2{
-			float:left;
-			position: relative;
-			left:150px;
-			top:100px;
-		}
-		.two{
-			background-color: #373636;
-			width: 100%;
-			height: 300px;
-		}
-
-		.two .img2 img{
-			clear:both;
-			width: 500px;
-			height: 300px;
-			float: right;
-		}
-		.two p{
-			float: left;
-			position: relative;
-			left: 50px;
-			top: 150px;
-		}
-		.two h2{
-			float: left;
-			position: relative;
-			left:150px;
-			top:100px;
-		}
-
-		.three .img3 img{
-			clear:both;
-			width: 500px;
-			height: 300px;
-			float: left;
-		}
-		.three p{
-			float: left;
-			position: relative;
-			left: 50px;
-			top: 150px;
-		}
-		.three h2{
-			float: left;
-			position: relative;
-			left:150px;
-			top:100px;
-		}
-
-		.last-area{
-			background: #4a4949;
-		}
-
-		.jianjie{
-			background: #443576;
-			color: #fff;
-			height: 750px;
-			padding:100px;
-			line-height: 70px;
-		}
-		.rongqi{
-			width: 1080px;
-			margin: 0px auto;
-		}
-		.rongqi .jianjie2 h2,.sub-heading{
-			text-align: center;
-		}
-		.jianjie2 .hr{
-			background: #1d0c1c;
-			width: 60%;
-		}
-		.rongqi .jianjie2 .sub-heading{
-			max-width: 600px;
-			margin-left: 240px;
-		}
-		.card{
-			float: left;
-			position: relative;
-			left: 40px;
-			width: 50%;
-			min-height: 300px;
-			/*max-width: 400px;*/
-			padding: 50px;
-			box-sizing: border-box;
-			/*border: 1px solid white;*/
-		}
-		.card:first-child{
-			background: rgba(0,0,0,0.01);
-		}
-		.card:nth-child(2){
-			background: rgba(0,0,0,0.05);
-		}
-		.card:nth-child(3){
-			background: rgba(0,0,0,0.09);
-		}
-		.card:nth-child(4){
-			background: rgba(0,0,0,0.13);
-		}
-		.card:nth-child(5){
-			background: rgba(0,0,0,0.19);
-		}
-
-		/*脚*/
-
-		footer{
-			background: #333;
-			color: #fff;
-			height: 200px;
-		}
-
-		.share li{
-			display: inline-block;
-			margin: 30px;
-		}
-		.share{
-			display: inline-block;
-			position: relative;
-			left:600px;
-		}
-		.last span{
-			position: relative;
-			left:900px;
-			display: inline-block;
-		}
-		.main{
-			background: #444 url(http://localhost:10000/one.jpg);
-			background-attachment: fixed;
-			background-repeat: no-repeat;
-			background-size: cover;
-			background-position: center center;
-		}
-	</style>
+	<link href="http://localhost:10000/blog.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <div class="main">
@@ -278,7 +20,7 @@
 		<div id="banner">
 			<div class="center1">
 				<h1>刘烨</h1>
-				<p>welcome to XuLinJie_blog,Thank you.I'will paldsjsd sdnjks sndlk sdjsdsndjnjsndsd  dksjdks</p>
+				<p>welcome to my homepage,Thank you.Now you see me </p>
 				<button>了解我</button>
 				<div class="more">
 					<a href="#center">更多</a>
@@ -293,7 +35,7 @@
 			<div class="biaoti">
 				<h2>这是我</h2>
 				<div class="hr"></div>
-				<p>我是一个喜欢写博客，爱吃美食，喜欢旅游的男孩，我热爱这个世界，热爱这里</p>
+				<p>我是一个爱吃美食，喜欢旅游的女孩，我热爱这个世界，热爱这里</p>
 			</div>
 			<div class="tubiao">
 				<span class="item">item</span>
@@ -327,29 +69,36 @@
 		<section class="jianjie">
 			<div class="rongqi">
 				<div class="jianjie2">
-					<h2>不约</h2>
+					<h2>温暖</h2>
 					<div class="hr">
 
 					</div>
 					<div class="sub-heading">
-						<p>welcome to XuLinJie_blog,Thank you.I'will paldsjsd sdnjks sndlk sdjsdsndjnjsndsd  dksjdksfd df dfdsw</p>
+						<p>welcome to wangruiwen homepage,Thank you.I'will show you some of my favorite music.</p>
 					</div>
 				</div>
 				<div class="card">
-					<h3>精通HTML5</h3>
-					<p>iweiw wje oj rjoe oejfoejoej  feof oejf oeofejf oje ojfeoj oej ojfo jof sdsdsddqwwfddfdfsdfwefwdf ff</p>
+					<h3>七里香</h3>
+					<p>那温暖的阳光像刚摘的鲜艳草莓
+						你说你舍不得吃掉这一种感觉</p>
 				</div>
 				<div class="card">
-					<h3>精通C++</h3>
-					<p>iweiw wje oj rjoe oejfoejoej  feof oejf oeofejf oje ojfeoj oej ojfo jofof sdsdsddqwwfddfdfsdfwefwdf </p>
+					<h3>温柔</h3>
+					<p>走在风中今天阳光
+						突然好温柔
+						天的温柔地的温柔 </p>
 				</div>
 				<div class="card">
-					<h3>熟练php</h3>
-					<p>iweiw wje oj rjoe oejfoejoej  feof oejf oeofejf oje ojfeoj oej ojfo jofof sdsdsddqwwfddfdfsdfwefwdf </p>
+					<h3>甜甜的</h3>
+					<p>我轻轻地尝一口
+						你说的爱我
+						还在回味你给过的温柔 </p>
 				</div>
 				<div class="card">
-					<h3>熟练Linux</h3>
-					<p>iweiw wje oj rjoe oejfoejoej  feof oejf oeofejf oje ojfeoj oej ojfo jofof sdsdsddqwwfddfdfsdfwefwdf f fd</p>
+					<h3>暖暖</h3>
+					<p>细腻的喜欢
+						毛毯般的厚重感
+						晒过太阳熟悉的安全感</p>
 				</div>
 			</div>
 	</section>
